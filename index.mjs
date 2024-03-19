@@ -18,7 +18,6 @@ const randomTitle2 = Math.floor(Math.random()* nouns.length);
 function main() {
   const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
   const createdAlbumTitle = albumTitleGenerator(createdBandName, verbs[randomTitle], nouns[randomTitle2]);
-  console.log(createdAlbumTitle);
 }
 
 main();
