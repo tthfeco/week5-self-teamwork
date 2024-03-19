@@ -13,3 +13,5 @@ import { brandNameGenerator } from "./bandName";
 function main (){
   const bandName = brandNameGenerator(allWords[randomIndex]);
 }
+
+main();
