@@ -19,7 +19,6 @@ import { descriptionGenerator } from './descriptionGen.mjs';
 function main() {
   const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
   const createdDescription = descriptionGenerator( adjectives[randomAdjective], conjuctions[randomConjuction], adjectives[randomAdjective2]);
-  console.log(createdDescription);
 }
 
 main();
