@@ -15,10 +15,10 @@ const randomIndex = Math.floor(Math.random() * allWords.length);
 const randomTitle = Math.floor(Math.random()* verbs.length);
 const randomTitle2 = Math.floor(Math.random()* nouns.length);
 
-
 function main() {
   const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
-  const createdAlbumTitle = albumTitleGenerator(createdBrandName, verbs[randomTitle], nouns[randomTitle2]);
+  const createdAlbumTitle = albumTitleGenerator(createdBandName, verbs[randomTitle], nouns[randomTitle2]);
+  console.log(createdAlbumTitle);
 }
 
 main();
