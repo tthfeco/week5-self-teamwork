@@ -13,6 +13,7 @@ import { albumTitleGenerator } from './albumTitleGen.mjs';
 
 function main() {
   const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
+  const createdAlbumTitle = albumTitleGenerator(createdBrandName, verbs[randomTitle], nouns[randomTitle2]);
 }
 
 main();
