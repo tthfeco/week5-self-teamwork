@@ -27,6 +27,8 @@ function main() {
   const createdAlbumTitle = albumTitleGenerator(createdBandName, verbs[randomTitle], nouns[randomTitle2]);
   const createdDescription = descriptionGenerator(adjectives[randomAdjective], conjuctions[randomConjuction], adjectives[randomAdjective2]);
   const createdAlbum = albumDataGenerator(createdBrandName, createdAlbumTitle, createdDescription, createdYear);
+
+  console.log(createdAlbum);
 }
 
 main();
