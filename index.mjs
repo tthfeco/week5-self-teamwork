@@ -3,6 +3,7 @@ export { nouns, verbs, adjectives, names };
 import { brandNameGenerator } from './bandName.mjs';
 import { albumTitleGenerator } from './albumTitleGen.mjs';
 import { descriptionGenerator } from './descriptionGen.mjs';
+import { yearGenerator } from './yearGen.mjs'; 
 
 
 let nouns = ['Hammer', 'Drill', 'House', 'Rose', 'Banana', 'Lamp'];
