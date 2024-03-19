@@ -4,6 +4,7 @@ import { brandNameGenerator } from './bandName.mjs';
 import { albumTitleGenerator } from './albumTitleGen.mjs';
 import { descriptionGenerator } from './descriptionGen.mjs';
 import { yearGenerator } from './yearGen.mjs'; 
+import { albumDataGenerator } from './albumDataGen.mjs';
 
 
 let nouns = ['Hammer', 'Drill', 'House', 'Rose', 'Banana', 'Lamp'];
@@ -27,6 +28,9 @@ function main() {
   const createdAlbumTitle = albumTitleGenerator(createdBandName, verbs[randomTitle], nouns[randomTitle2]);
   const createdDescription = descriptionGenerator(adjectives[randomAdjective], conjuctions[randomConjuction], adjectives[randomAdjective2]);
   const createdYear = yearGenerator(createdBandName);
+  const createdAlbum = albumDataGenerator(createdBrandName, createdAlbumTitle, createdDescription, createdYear);
+
+  console.log(createdAlbum);
 }
 
 main();
