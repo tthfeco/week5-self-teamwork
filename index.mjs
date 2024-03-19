@@ -12,6 +12,7 @@ import { brandNameGenerator } from './bandName.mjs';
 
 function main() {
   const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
+  const createdYear = yearGenerator(createdAlbumTitle);
 }
 
 main();
