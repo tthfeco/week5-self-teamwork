@@ -6,12 +6,12 @@ let names = ['Spiderman', 'Frodo', 'Batman', 'Grinch', 'Trump', 'Clinton'];
 const allWords = nouns.concat(verbs, adjectives, names);
 const randomIndex = Math.floor(Math.random() * allWords.length);
 
-export {nouns, verbs, adjectives, names};
+export { nouns, verbs, adjectives, names };
 
-import { brandNameGenerator } from "./bandName";
+import { brandNameGenerator } from './bandName.mjs';
 
-function main (){
-  const bandName = brandNameGenerator(allWords[randomIndex]);
+function main() {
+  const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
 }
 
 main();
