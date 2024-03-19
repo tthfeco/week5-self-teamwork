@@ -1,5 +1,3 @@
-import {nouns, verbs, adjectives, names} from './index.mjs';
-
 export function brandNameGenerator (name){
   let sum = 0;
   for (let i = 0; i < name.length; i++){
