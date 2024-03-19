@@ -9,10 +9,11 @@ const randomIndex = Math.floor(Math.random() * allWords.length);
 export { nouns, verbs, adjectives, names };
 
 import { brandNameGenerator } from './bandName.mjs';
+import { yearGenerator } from './yearGen.mjs';
 
 function main() {
   const createdBandName = brandNameGenerator(allWords[randomIndex], allWords);
-  const createdYear = yearGenerator(createdAlbumTitle);
+  const createdYear = yearGenerator(createdBandName);
 }
 
 main();
